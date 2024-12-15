@@ -12,18 +12,18 @@ body {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: bold;
 }
 
 h3{
     text-align: justify;
-    font-size: 1.375rem;
+    font-size: 1.72rem;
 }
 
 h4{
-    font-size: 1rem;
+    font-size: 1.375rem;
     text-align: center;
     font-weight: bold;
 }
@@ -31,7 +31,7 @@ h4{
 p {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1em;
+    font-size: 1.2rem;
     text-align: center;
     
 }
@@ -54,6 +54,7 @@ p {
 
 .wrapper-top-left img {
     margin-top: 10px ;
+    margin-left: 30px;
     max-width: 250px; /* Ajusta el ancho máximo de la imagen */
     max-height: 250px; /* Ajusta la altura máxima de la imagen */
     display: block; /* Elimina cualquier espacio en línea adicional */
@@ -63,23 +64,21 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px; /* Espaciado entre íconos */
+    gap: 10px; 
     display: none;
 }
 
 .wrapper-top-right ul li {
    list-style: none;/* Elimina las viñetas de la lista */
-   font-size: 1rem; /* Ajusta el tamaño de la fuente */
+   font-size: 1.1rem; /* Ajusta el tamaño de la fuente */
    color: #333; /* Color del texto */
-   cursor: pointer; /* Cambia el cursor al pasar el mouse */
    text-align: center; /* Alinea el texto a la derecha */
    align-items: center;
+   margin-right: 40px;
 }
 .wrapper-top-right a{
     text-decoration: none; /* Elimina el subrayado */
-    color: inherit; /* Asegura que use el color del texto padre */
 }
-
 
 .wrapper-main {
     margin: 30px;
