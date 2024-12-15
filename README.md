@@ -11,12 +11,11 @@ En mi pagina hice uso de diferentes etiquetas como:
 
 - `<ul>` y `<ol>` con sus `<li>` para sus elemento.
 
-- `<nav>` para crear una barra de navegación y dezplazarme por el contenido con un clic en donde para ser mas especifico se utilizo un `<ul>` con `style=""`para darle mejor apariencia visual con los siguientes atributos `list-style: none;` sirve para eliminar los marcadores predeterminados de la lista (•, 1., etc.) `margin: 0;` que sirve para eliminar cualquier margen externo que el navegador aplique por defecto al `<ul>`, `padding: 0;`este se asegura que los elementos `<li>` no tengan espacio adicional, `display: flex;` permite alinear y distribuir los `<li>` de manera más eficiente convirtiendo el contenedor `<ul>` en un contenedor flexible, `justify-content: center ;` Centra los `<li>` dentro de la lista `<ul>` centrando la barra de navegacion y `background-color: #444 ;` sirve para ponerle un color de fondo en la barra en este caso gris oscuro o #444.
-Dentro de los `<li>` utilize `style=""`para darle mejor apariencia visual a la lista e hiciera mejor contraste visual mediante los siguiente atributos `margin: 0 15px` en este caso el 0: Define el margen superior e inferior del `<li>` como 0 píxeles (sin espacio) y el 15 px Añade un espacio horizontal (15 píxeles) entre los elementos de la lista `<li>` para separarlos visualmente, `color: white;` Cambia el color del texto del enlace a blanco y `text-decoration: none;` quita el subrayado a los enlaces dandole mejor apariencia visual.
+- `<nav>` para crear una barra de navegación y dezplazarme por el contenido.
 
-- `<p>` para agregar parrafos y utilice el atributo `<strong>` para poner algunas palabras en negritas y en ciertas partes del documentos como el `<footer>` le agregue como atributo `style=""` en donde utilice `text-align: center;` y `margin-top: 20px;` para ponerle un margen superior de 20 pixeles basicamente para darle un espaciado y centrar el texto.
+- `<p>` para agregar parrafos.
 
-- `<img>` para insertar imagenes mediante varios atributos `src="link"` para colocar el enlace o la fuente de donde sacara la imagen `width=""` para el ancho de la imagen `height=""` para el alto de la imagen y  `alt="descripcion de imagen"` para describir la imagen. 
+- `<img>` para insertar imagenes mediante varios atributos `src="link"` para colocar el enlace y  `alt="descripcion de imagen"` para describir la imagen. 
 
 - `<a>` para agregar enlaces o links mediante el atributo `href="link"` y asi redirigirnos a otra página o si queremos que habra una nueva pestaña se hace  con `target="_blank"` y listo.
 
