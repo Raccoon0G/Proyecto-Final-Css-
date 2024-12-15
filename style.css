@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-style: normal;
+    font-family: "DM Sans", serif;
+    color: black;
+    background: white;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: .8rem;
+    text-align: center;
+    
+}
+
+.text-color-white {
+    color: white;
+}
+
+.text-color-black {
+    color: #122130;
+}
+
+
+.wrapper-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-top-left img{
+    width: auto;
+    height: 11vh;
+    justify-items: center;
+    
+}
+
+.wrapper-top-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; /* Espaciado entre íconos */
+    display: none;
+}
+
+
+.wrapper-main {
+    margin: 30px;
+    display: flex;
+    flex-direction: column; /* por  defecto */
+}
+
+.wrapper-text-1{
+    background: white;
+    border-radius: 20px;
+   
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+.wrapper-text-2{
+    background: #5F4BF9;
+    border-radius: 20px;
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px; 
+    text-align: justify;
+    display: none;
+}
+
+.button {
+    background: white;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.wrapper-button-svg{
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background: #DFDBFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-text{
+    margin-left: 5px;
+}
+
+.button-svg{
+    width: 20px;
+    height: auto;
+}
+
+.wrapper-image {
+    display: none;
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.wrapper-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-bottom-left h5 {
+    font-weight: 500;
+    font-size: 12px;
+    color: #666; /* Texto gris */
+    text-decoration: none;
+}
+
+.wrapper-bottom-right{
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaciado entre íconos */
+}
+
+.social-icons {
+    display: flex;
+    gap: 4px; /* Espaciado entre íconos */
+}
+
+.social-icons a img{
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+@media screen and (min-width: 0px){
+   
+}
+
+@media screen and (min-width: 480px){
+  
+}
+
+@media screen and (min-width: 768px){
+  
+}
