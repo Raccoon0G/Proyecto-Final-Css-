@@ -19,18 +19,18 @@ h1 {
 
 h3{
     text-align: justify;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 h4{
-    font-size: 1.2em;
+    font-size: 1rem;
     text-align: center;
     font-weight: bold;
 }
 
 p {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 1em;
     text-align: center;
     
@@ -49,6 +49,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 .wrapper-top-left img {
@@ -61,8 +62,18 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px; /* Espaciado entre íconos */
+    gap: 10px; /* Espaciado entre íconos */
     display: none;
+}
+
+.wrapper-top-right ul li {
+   list-style: none;/* Elimina las viñetas de la lista */
+   font-size: 1rem; /* Ajusta el tamaño de la fuente */
+   color: #333; /* Color del texto */
+   cursor: pointer; /* Cambia el cursor al pasar el mouse */
+   text-align: center; /* Alinea el texto a la derecha */
+   align-items: center;
+   text-decoration: none;
 }
 
 
@@ -140,8 +151,6 @@ p {
 
 }
 
-
-
 .button {
     background: black;
     border-radius: 5px;
@@ -206,7 +215,6 @@ p {
 
 
 
-
 @media screen and (min-width: 0px){
    
 }
@@ -224,15 +232,15 @@ p {
     .wrapper-top{
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding: 10px 20px;
     }
 
-    .wrapper-top-right{
-       
-        display: block;
-        
+    .wrapper-top-right {
+        display: flex; /* Activa Flexbox */
+        align-items: center; /* Alinea las columnas al final (opcional) */
+        gap: 5px; /* Agrega espacio entre los elementos */
     }
+
    
     .wrapper-main {
         display: flex; /* Activa Flexbox */
