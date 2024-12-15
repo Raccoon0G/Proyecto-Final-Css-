@@ -84,8 +84,7 @@ p {
 }
 
 .wrapper-top-left img {
-    margin-top: 10px ;
-    margin-left: 30px;
+    margin-top: 15px ;
     max-width: 250px; /* Ajusta el ancho máximo de la imagen */
     max-height: 250px; /* Ajusta la altura máxima de la imagen */
     display: block; /* Elimina cualquier espacio en línea adicional */
@@ -139,9 +138,7 @@ p {
 .wrapper-text-1{
     background: white;
     border-radius: 20px;
-   
-    /* padding-left: 10px;
-    padding-right: 10px; */
+
 }
  
 .wrapper-text-2{
@@ -178,19 +175,17 @@ p {
     border-radius: 20px;
     text-align: justify;
     box-sizing: border-box;
-    text-align: justify;
     justify-content: center; /* Centra horizontalmente */
     align-items: center;
-
 }
 
 .button {
     background: black;
-    border-radius: 5px;
-    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
     display: inline-flex;
     align-items: center;
     text-decoration: none;
+    justify-content:center ;
 }
 
 .wrapper-button-svg{
@@ -224,13 +219,17 @@ p {
 }
 
 .wrapper-bottom-left h5 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 12px;
     color: #666; /* Texto gris */
+}
+
+.wrapper-bottom-left a {
     text-decoration: none;
 }
 
 .wrapper-bottom-right{
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 20px; /* Espaciado entre íconos */
@@ -265,6 +264,10 @@ p {
     .wrapper-top{
         display: flex;
         justify-content: space-between;
+    }
+
+    .wrapper-top-left img {
+        margin-left: 30px;
     }
 
     .wrapper-top-right {
@@ -310,6 +313,9 @@ p {
         display: block;
     }
 
+    .wrapper-text-3 p{
+        font-size: 1rem; 
+    }
 
 }
 ```
