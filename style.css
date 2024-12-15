@@ -232,7 +232,6 @@ p {
     .wrapper-top{
         display: flex;
         justify-content: space-between;
-        padding: 10px 20px;
     }
 
     .wrapper-top-right {
