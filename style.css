@@ -114,8 +114,6 @@ p {
     max-height: 50vh; /* Opcional: límite máximo de altura */
     border-radius: 20px; /* Esquinas redondeadas */
     object-fit: cover; /* Asegura que la imagen cubra el espacio disponible sin distorsión */
-    margin-top: 20px;
-    margin: 20px
 }
 
 .wrapper-text-3{
@@ -123,6 +121,8 @@ p {
     border-radius: 20px;
     padding-left: 25px;
     padding-right: 25px; 
+    padding-bottom: 15px;
+    padding-top: 15px;
     text-align: justify;
     justify-content: center; /* Centra horizontalmente */
     align-items: center;
@@ -136,7 +136,6 @@ p {
     padding: 5px 5px 5px 5px;
     display: inline-flex;
     align-items: center;
-    margin-top: 20px;
     text-decoration: none;
 }
 .wrapper-button-svg{
