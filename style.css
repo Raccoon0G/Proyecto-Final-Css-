@@ -12,16 +12,26 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
-    font-size: 32px;
+    font-weight: bold;
+}
+
+h3{
+    text-align: justify;
+    font-size: 22px;
+}
+
+h4{
+    font-size: 1.2em;
+    text-align: center;
     font-weight: bold;
 }
 
 p {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: .8rem;
+    font-size: 1em;
     text-align: center;
     
 }
@@ -42,8 +52,8 @@ p {
 }
 
 .wrapper-top-left img {
-    max-width: 100px; /* Ajusta el ancho máximo de la imagen */
-    max-height: 100px; /* Ajusta la altura máxima de la imagen */
+    max-width: 200px; /* Ajusta el ancho máximo de la imagen */
+    max-height: 225px; /* Ajusta la altura máxima de la imagen */
     display: block; /* Elimina cualquier espacio en línea adicional */
 }
 
@@ -94,9 +104,9 @@ p {
     display: block;
     padding-left: 25px;
     padding-right: 25px; 
-    text-align: justify;
     display: none;
 }
+
 
 .wrapper-image {
     display: flex; /* Activa el modelo de caja flexible */
@@ -129,6 +139,18 @@ p {
 
 }
 
+.wrapper-text-3{
+    background: rgba(151, 148, 148,25%);
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px; 
+    padding-bottom: 15px;
+    padding-top: 15px;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+
+}
+
 
 .button {
     background: black;
@@ -138,6 +160,7 @@ p {
     align-items: center;
     text-decoration: none;
 }
+
 .wrapper-button-svg{
     padding: 5px;
     border-radius: 5px;
@@ -147,6 +170,7 @@ p {
     align-items: center;
     justify-content: center;
 }
+
 .button-text{
     margin-left: 5px;
 }
@@ -233,7 +257,7 @@ p {
     .wrapper-column-left {
         display: flex;
         flex-direction: column; /* Apila los elementos verticalmente */
-        gap: 20px; /* Espaciado entre text-1 y text-2 */
+        gap: 100px; /* Espaciado entre text-1 y text-2 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna izquierda */ 
         align-items: center; /* Centra los elementos horizontalmente */
@@ -242,7 +266,7 @@ p {
     .wrapper-column-right {
         display: flex;
         flex-direction: column; /* Apila imagen y text-3 */
-        gap: 20px; /* Espaciado entre imagen y text-3 */
+        gap: 5px; /* Espaciado entre imagen y text-3 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna derecha */
         align-items: center; /* Centra los elementos horizontalmente */
