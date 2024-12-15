@@ -53,8 +53,9 @@ p {
 }
 
 .wrapper-top-left img {
-    max-width: 200px; /* Ajusta el ancho máximo de la imagen */
-    max-height: 225px; /* Ajusta la altura máxima de la imagen */
+    margin-top: 10px ;
+    max-width: 250px; /* Ajusta el ancho máximo de la imagen */
+    max-height: 250px; /* Ajusta la altura máxima de la imagen */
     display: block; /* Elimina cualquier espacio en línea adicional */
 }
 
@@ -73,7 +74,10 @@ p {
    cursor: pointer; /* Cambia el cursor al pasar el mouse */
    text-align: center; /* Alinea el texto a la derecha */
    align-items: center;
-   text-decoration: none;
+}
+.wrapper-top-right a{
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Asegura que use el color del texto padre */
 }
 
 
@@ -254,7 +258,7 @@ p {
     .wrapper-column-left {
         display: flex;
         flex-direction: column; /* Apila los elementos verticalmente */
-        gap: 100px; /* Espaciado entre text-1 y text-2 */
+        gap: 80px; /* Espaciado entre text-1 y text-2 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna izquierda */ 
         align-items: center; /* Centra los elementos horizontalmente */
