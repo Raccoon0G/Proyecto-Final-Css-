@@ -144,19 +144,17 @@ p {
     border-radius: 20px;
     text-align: justify;
     box-sizing: border-box;
-    text-align: justify;
     justify-content: center; /* Centra horizontalmente */
     align-items: center;
-
 }
 
 .button {
     background: black;
-    border-radius: 5px;
-    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
     display: inline-flex;
     align-items: center;
     text-decoration: none;
+    justify-content:center ;
 }
 
 .wrapper-button-svg{
@@ -190,13 +188,17 @@ p {
 }
 
 .wrapper-bottom-left h5 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 12px;
     color: #666; /* Texto gris */
+}
+
+.wrapper-bottom-left a {
     text-decoration: none;
 }
 
 .wrapper-bottom-right{
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 20px; /* Espaciado entre íconos */
@@ -280,5 +282,8 @@ p {
         display: block;
     }
 
+    .wrapper-text-3 p{
+        font-size: 1rem; 
+    }
 
 }
