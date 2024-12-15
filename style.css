@@ -131,7 +131,6 @@ p {
     width: 100%; /* La imagen ocupa el 100% del ancho disponible */
     height: auto; /* La altura se ajustará automáticamente */
     margin: 5px; /* Espaciado alrededor del contenedor */
-    overflow: hidden; /* Oculta desbordamientos si los hay */
 }
 
 .wrapper-image img {
