@@ -140,7 +140,7 @@ p {
 .wrapper-text-3{
     width: 100%;
     background: rgba(151, 148, 148,20%);
-    padding: 20px;
+    padding: 5px;
     border-radius: 20px;
     text-align: justify;
     box-sizing: border-box;
@@ -154,7 +154,7 @@ p {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    justify-content:center ;
+    padding: 5px 5px 5px 5px;
 }
 
 .wrapper-button-svg{
@@ -172,7 +172,7 @@ p {
 }
 
 .button-svg{
-    width: 20px;
+    width: 30px;
     height: auto;
 }
 
@@ -283,7 +283,7 @@ p {
     }
 
     .wrapper-text-3 p{
-        font-size: 1rem; 
+        font-size: 1.1rem; 
     }
 
 }
