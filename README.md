@@ -1,6 +1,6 @@
 # Proyecto FInal
 
-Este archivo README.md forma parte del proyecto final con css de dev.f para el segundo modulo, en el que elegi el tema relacionado a la banda de metal Baby metal en donde a mi página le puse "Babymetal".
+Este archivo README.md forma parte del proyecto final con css de dev.f para el segundo modulo.
 
 
 ## Caracteristicas de mi página 
