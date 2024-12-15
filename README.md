@@ -3,23 +3,6 @@
 Este archivo README.md forma parte del proyecto final con css de dev.f para el segundo modulo, en el que elegi el tema relacionado a la banda de metal Baby metal en donde a mi página le puse "Babymetal".
 
 
-## Organización de mi página
-Mi página la organice de la siguiente manera:
-
-1. Heavy Metal | Metal (Introducción)
-2. Subgéneros del metal y bandas representativas
-3. ¿Quiénes son Babymetal? (Tema Principal)
-4. Por qué algunos metaleros no consideran a Babymetal como metal
-5. Integrantes de Babymetal
-    - Banda de Apoyo (Kami Band)
-    - Integrantes
-6. Babymetal y su giro al género
-7. Características únicas
-8. Discografía destacada
-9. Mis 10 canciones favoritas de Babymetal (Datos Extras mios |Video o Iframes)
-10. Fotos sacadas por mí de Babymetal  (img)
-11. Suscríbete para más información (Formulario)
-
 ## Caracteristicas de mi página 
 
 En mi pagina hice uso de diferentes etiquetas como:
@@ -31,13 +14,9 @@ En mi pagina hice uso de diferentes etiquetas como:
 - `<nav>` para crear una barra de navegación y dezplazarme por el contenido con un clic en donde para ser mas especifico se utilizo un `<ul>` con `style=""`para darle mejor apariencia visual con los siguientes atributos `list-style: none;` sirve para eliminar los marcadores predeterminados de la lista (•, 1., etc.) `margin: 0;` que sirve para eliminar cualquier margen externo que el navegador aplique por defecto al `<ul>`, `padding: 0;`este se asegura que los elementos `<li>` no tengan espacio adicional, `display: flex;` permite alinear y distribuir los `<li>` de manera más eficiente convirtiendo el contenedor `<ul>` en un contenedor flexible, `justify-content: center ;` Centra los `<li>` dentro de la lista `<ul>` centrando la barra de navegacion y `background-color: #444 ;` sirve para ponerle un color de fondo en la barra en este caso gris oscuro o #444.
 Dentro de los `<li>` utilize `style=""`para darle mejor apariencia visual a la lista e hiciera mejor contraste visual mediante los siguiente atributos `margin: 0 15px` en este caso el 0: Define el margen superior e inferior del `<li>` como 0 píxeles (sin espacio) y el 15 px Añade un espacio horizontal (15 píxeles) entre los elementos de la lista `<li>` para separarlos visualmente, `color: white;` Cambia el color del texto del enlace a blanco y `text-decoration: none;` quita el subrayado a los enlaces dandole mejor apariencia visual.
 
-- `<section>` para dividir el contenido y poder enlazarla con la barra de navegación`<nav>` mediante el atributo `id="identificador_seccion"`.
-
 - `<p>` para agregar parrafos y utilice el atributo `<strong>` para poner algunas palabras en negritas y en ciertas partes del documentos como el `<footer>` le agregue como atributo `style=""` en donde utilice `text-align: center;` y `margin-top: 20px;` para ponerle un margen superior de 20 pixeles basicamente para darle un espaciado y centrar el texto.
 
 - `<img>` para insertar imagenes mediante varios atributos `src="link"` para colocar el enlace o la fuente de donde sacara la imagen `width=""` para el ancho de la imagen `height=""` para el alto de la imagen y  `alt="descripcion de imagen"` para describir la imagen. 
-
-- `<table>` para hacer tablas con los atributos `<thead>` para la parte superior de la tabla y `<tbody>` para definir que ira en el cuerpo de la tabla y dentro de los atributos anteriores `<tr>` para representar una fila en la tabla y `<td>` para las celdas dentro de las filas.
 
 - `<a>` para agregar enlaces o links mediante el atributo `href="link"` y asi redirigirnos a otra página o si queremos que habra una nueva pestaña se hace  con `target="_blank"` y listo.
 
@@ -47,7 +26,7 @@ Dentro de los `<li>` utilize `style=""`para darle mejor apariencia visual a la l
 ---
 ### Estilo o Css
 
-Replique el las pantallas que nos dejo el profe con los queries solo que yo agregue algunas cosas mas como el footer y otro elemento para colocar un video, obteniendo el siguiente código o estilo:
+Replique el las pantallas que nos dejo el profe con los queries solo que yo agregue algunas cosas más como el nav y footer  obteniendo el siguiente código o estilo:
 
 ```
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
@@ -57,8 +36,6 @@ html {
 }
 
 body {
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding-top: 90px; /* Añade espacio para el nav fijo */
     font-style: normal;
     font-family: "DM Sans", serif;
     color: black;
@@ -66,18 +43,18 @@ body {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: bold;
 }
 
 h3{
     text-align: justify;
-    font-size: 1.375rem;
+    font-size: 1.72rem;
 }
 
 h4{
-    font-size: 1rem;
+    font-size: 1.375rem;
     text-align: center;
     font-weight: bold;
 }
@@ -85,7 +62,7 @@ h4{
 p {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1em;
+    font-size: 1.2rem;
     text-align: center;
     
 }
@@ -98,15 +75,6 @@ p {
     color: #122130;
 }
 
-.nav{
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(8, 7, 6,0.94); /* Fondo sólido oscuro */
-    padding: 10px;
-}
 
 .wrapper-top{
     display: flex;
@@ -117,37 +85,30 @@ p {
 
 .wrapper-top-left img {
     margin-top: 10px ;
-    max-width: 120px; /* Ajusta el ancho máximo de la imagen */
-    max-height: auto; /* Ajusta la altura máxima de la imagen */
-    
+    margin-left: 30px;
+    max-width: 250px; /* Ajusta el ancho máximo de la imagen */
+    max-height: 250px; /* Ajusta la altura máxima de la imagen */
+    display: block; /* Elimina cualquier espacio en línea adicional */
 }
 
 .wrapper-top-right{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px; /* Espaciado entre íconos */
+    gap: 10px; 
     display: none;
-    margin-right: 40px;
 }
 
 .wrapper-top-right ul li {
    list-style: none;/* Elimina las viñetas de la lista */
-   font-size: 1rem; /* Ajusta el tamaño de la fuente */
-   cursor: pointer; /* Cambia el cursor al pasar el mouse */
+   font-size: 1.1rem; /* Ajusta el tamaño de la fuente */
+   color: #333; /* Color del texto */
    text-align: center; /* Alinea el texto a la derecha */
    align-items: center;
+   margin-right: 40px;
 }
 .wrapper-top-right a{
     text-decoration: none; /* Elimina el subrayado */
-    color: #FFFFFF; /* Texto blanco */
-    font-weight: 600;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.wrapper-top-right a:hover {
-    color: red; /* Amarillo dorado al pasar el mouse */
 }
 
 .wrapper-main {
@@ -186,27 +147,12 @@ p {
 .wrapper-text-2{
     background: #5F4BF9;
     border-radius: 20px;
+    display: block;
     padding-left: 25px;
     padding-right: 25px; 
     display: none;
 }
 
-
-.responsive-iframe {
-    display: flex;
-    position: relative; /* Establece un contenedor relativo */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding-bottom: 56.25%; /* Mantiene la proporción 16:9 */
-    height: 0; /* Altura inicial en 0 */
-    overflow: hidden; /* Oculta el contenido desbordado */
-}
-
-.responsive-iframe iframe {
-    position: absolute; /* Posiciona el iframe dentro del contenedor */
-    border-radius: 20px;
-    width: 100%; /* Ajusta el ancho al contenedor */
-    height: 100%; /* Ajusta la altura al contenedor */
-}
 
 .wrapper-image {
     display: flex; /* Activa el modelo de caja flexible */
@@ -214,11 +160,10 @@ p {
     align-items: center; /* Centra verticalmente */
     width: 100%; /* La imagen ocupa el 100% del ancho disponible */
     height: auto; /* La altura se ajustará automáticamente */
-    
+    margin: 5px; /* Espaciado alrededor del contenedor */
 }
 
 .wrapper-image img {
-    margin-top: 42px;
     width: 100%; /* La imagen se ajusta al ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     max-height: 50vh; /* Opcional: límite máximo de altura */
@@ -304,20 +249,18 @@ p {
 
 
 @media screen and (min-width: 0px){
-    .responsive-iframe {
-        display: none;
-    }
    
 }
 
 @media screen and (min-width: 480px){
-    .responsive-iframe {
-        display: block;
+    .wrapper-text-1{
+        display: none;
     }
-    
 }
 
 @media screen and (min-width: 768px){
+
+
 
     .wrapper-top{
         display: flex;
@@ -328,26 +271,6 @@ p {
         display: flex; /* Activa Flexbox */
         align-items: center; /* Alinea las columnas al final (opcional) */
         gap: 5px; /* Agrega espacio entre los elementos */
-    }
-    .wrapper-top-right ul {
-        display: flex;
-        gap: 15px; /* Espaciado reducido en pantallas pequeñas */
-    }
-
-    .wrapper-top-left img {
-        width: 150px; /* Reduce el logo en pantallas pequeñas */
-    }
-
-    .wrapper-top-right a {
-        text-decoration: none;
-        color: #FFFFFF;
-        font-weight: 600;
-        font-size: 1rem;
-        transition: color 0.3s ease;
-    }
-    
-    .wrapper-top-right a:hover {
-        color: #F5A623;
     }
 
    
@@ -364,23 +287,16 @@ p {
     .wrapper-column-left {
         display: flex;
         flex-direction: column; /* Apila los elementos verticalmente */
-        gap: 24px; /* Espaciado entre text-1 y text-2 */
+        gap: 80px; /* Espaciado entre text-1 y text-2 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna izquierda */ 
         align-items: center; /* Centra los elementos horizontalmente */
     }
 
-    
-    .responsive-iframe iframe {
-        display: block;
-        width: 100%;
-        height: 50%; 
-    }
-
     .wrapper-column-right {
         display: flex;
         flex-direction: column; /* Apila imagen y text-3 */
-        gap: 24px; /* Espaciado entre imagen y text-3 */
+        gap: 5px; /* Espaciado entre imagen y text-3 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna derecha */
         align-items: center; /* Centra los elementos horizontalmente */
@@ -392,11 +308,10 @@ p {
 
     .wrapper-text-2 {
         display: block;
-        
     }
 
 
-} 
+}
 ```
 
 
@@ -438,7 +353,7 @@ Este comando guarda los cambios y la opción `-m` nos permite añadir un mensaje
 git commit -m "Creacion del archivo index.html"
 ```
 ---
-Continuando con el proceso, ahora lo que hice fue ir a mi github y crear un repositorio online le puse como nombre `ProyectoFinal` una vez creado copie el enlace que me genero GitHub en mi caso `https://github.com/Raccoon0G/PreyectoFinal.git` una vez obtenido el link dle repositorio en github me dispuse a colocar el siguiente comando en la terminal de `Vs Code` :
+Continuando con el proceso, ahora lo que hice fue ir a mi github y crear un repositorio online le puse como nombre `ProyectoFinal` una vez creado copie el enlace que me genero GitHub en mi caso `https://github.com/Raccoon0G/Proyecto-Final-Css-.git` una vez obtenido el link dle repositorio en github me dispuse a colocar el siguiente comando en la terminal de `Vs Code` :
 
 ### `git remote -v`
 Este comando se utiliza para mostrar las URL de los repositorios remotos si es que existen para el repositorio local. Lo utilice más que nada para comprobar que no halla ningun repositorio en linea guardado.
@@ -449,21 +364,21 @@ git remote -v
 ```
 **Posteriormente :**
 
-Una vez que comprobre que no habia nada en la variable `origin` me dispuse a guardar en esa variable el link del reposistorio online que obtuvimos hace un momento `https://github.com/Raccoon0G/PreyectoFinal.git` con el siguiente comando :
+Una vez que comprobre que no habia nada en la variable `origin` me dispuse a guardar en esa variable el link del reposistorio online que obtuvimos hace un momento `https://github.com/Raccoon0G/Proyecto-Final-Css-.git` con el siguiente comando :
 
 ### `git remote add origin "link de repositorio"`
 Este comando se utiliza para añadir un nuevo repositorio remoto y vincularlo al repositorio local. Es esencial para poder usar comandos como `git push` o `git pull` con ese repositorio remoto.
 
 **En mi caso lo use así:**
 ```bash
-git remote add origin "https://github.com/Raccoon0G/Nav-Footer-responsive-design.git"
+git remote add origin "https://github.com/Raccoon0G/Proyecto-Final-Css-.git"
 ```
  
  Y volvi a comprobar que se haya guardado correctamente con  `git remote -v` y me salio esto:
 
  ```
-origin  https://github.com/Raccoon0G/Nav-Footer-responsive-design.git (fetch)
-origin  https://github.com/Raccoon0G/Nav-Footer-responsive-design.git (push)
+origin  https://github.com/Raccoon0G/Proyecto-Final-Css-.git (fetch)
+origin  https://github.com/Raccoon0G/Proyecto-Final-Css-.git (push)
  ```
  Una vez que me salio lo anterior supe que mi directorio local ya estaba vinculado con el directorio remoto de GitHub.
 
@@ -490,7 +405,7 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 471 bytes | 471.00 KiB/s, done.
 Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-To https://github.com/Raccoon0G/Nav-Footer-responsive-design.git
+To https://github.com/Raccoon0G/Proyecto-Final-Css-.git
    ca5ac47..dbd378b  main -> main
 
 ```
@@ -498,18 +413,18 @@ Con esto fue la manera en que conecte correctamente mi repositorio local con el 
 
 ## Desplegar mi página en GitHub Pages
 
-Una vez hecho lo anterior, desde inicializar `git` hasta hacer el `git push origin main`, me fui a mi repositorio de `GitHub` con el siguiente link `https://github.com/Raccoon0G/Nav-Footer-responsive-design` para desplegar mi proyecto en donde hice los siguiente pasos :
+Una vez hecho lo anterior, desde inicializar `git` hasta hacer el `git push origin main`, me fui a mi repositorio de `GitHub` con el siguiente link `https://github.com/Raccoon0G/Proyecto-Final-Css-` para desplegar mi proyecto en donde hice los siguiente pasos :
 
 1. Le di click en `settings` o ajustes.
 2. Una vez en settings le di clic en la sección `Pages`.
 3. Una vez en GitHub `Pages` me diriji a `Branch` en donde seleccione mi rama en mi caso `main` y le di en `Save` o guardar.
-4. Ahora solo espere un momento hasta que me dio el enlace de la página que acababa de desplegar en mi caso `https://raccoon0g.github.io/Nav-Footer-responsive-design/`.
+4. Ahora solo espere un momento hasta que me dio el enlace de la página que acababa de desplegar en mi caso `https://github.com/Raccoon0G/Proyecto-Final-Css-`.
 5. Una vez que me dio el link solo quedaba comprobar que mi página estuviera en linea cosa que sucedio,por lo que aquí acaba la explicación para desplegar la página.
 
 ---
 ### Enlace a mi Repositorio
 GitHub: [Raccon0G](https://github.com/Raccoon0G/)
 
-Enlace al repositorio de este trabajo : https://github.com/Raccoon0G/Nav-Footer-responsive-design
+Enlace al repositorio de este trabajo : https://github.com/Raccoon0G/Proyecto-Final-Css-
 
-Enlace a la página (GitHub Pages) de este trabajo : https://raccoon0g.github.io/Nav-Footer-responsive-design/
+Enlace a la página (GitHub Pages) de este trabajo : https://raccoon0g.github.io/Proyecto-Final-Css-/
